@@ -4,9 +4,8 @@ import './App.css';
 function getUrl(path) {
   if (process.env.NODE_ENV === 'development') {
     return 'http://localhost:5000' + path
-  } else {
-    return path
   }
+  return path
 }
 
 function App() {
